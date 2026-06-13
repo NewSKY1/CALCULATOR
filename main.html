@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc">
+  <div class="display" id="display" onclick="focusEnd()">
+    <div class="history" id="history">No history</div>
+    <div class="result" id="result"></div>
+    <div class="expr" id="expr">&nbsp;</div>
+  
+  </div>
+  <div class="grid">
+    <button class="btn-clear" onclick="clearAll()">CLEAR</button>
+    <button class="btn-ans" onclick="input('ANS')">ANS</button>
+    <button class="btn-op" onclick="deleteLast()">⌫</button>
+    <button class="btn-op" onclick="input('/')">÷</button>
+
+    <button class="btn-num" onclick="input('7')">7</button>
+    <button class="btn-num" onclick="input('8')">8</button>
+    <button class="btn-num" onclick="input('9')">9</button>
+    <button class="btn-op" onclick="input('*')">×</button>
+
+    <button class="btn-num" onclick="input('4')">4</button>
+    <button class="btn-num" onclick="input('5')">5</button>
+    <button class="btn-num" onclick="input('6')">6</button>
+    <button class="btn-op" onclick="input('-')">−</button>
+
+    <button class="btn-num" onclick="input('1')">1</button>
+    <button class="btn-num" onclick="input('2')">2</button>
+    <button class="btn-num" onclick="input('3')">3</button>
+    <button class="btn-op" onclick="input('+')">+</button>
+
+    <button class="btn-num" onclick="input('0')">0</button>
+    <button class="btn-num" onclick="input('00')">00</button>
+    <button class="btn-num" onclick="input('.')">.</button>
+    <button class="btn-eq" onclick="calculate()">=</button>
+  </div>
+    <script src="script.js"></script>
+</html>
